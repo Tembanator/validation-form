@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validation Form</title>
+</head>
+<body>
+    <div class="container-main">
+        <div class="sidebar"></div>
+        <div class="section">
+            <div class="section-text">
+                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+            <div class="form-container">
+                <div class="form-title">
+                    <h3>Sign up</h3>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="group">
+                            <label for="firstname">Firstname*</label>
+                            <input type="text" name="firstname" id="firstname" minlength="3" pattern="^[a-zA-Z ]*$" title="Firstname must only have letters." required>
+                        </div>
+                        <div class="group">
+                            <label for="lastname">Lastname*</label>
+                            <input type="text" name="lastname" minlength="3" id="lastname" pattern="^[a-zA-Z ]*$" title="Lastname must only have letters." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="group">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="group">
+                            <label for="phone">Phone number*</label>
+                            <input type="tel" name="phone" id="phone" pattern="^[0-9]*$" title="Phone number must only have numbers." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="group">
+                            <label for="email">Password*</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="group">
+                            <label for="phone">Confirm password*</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                        </div>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" id="submit-btn">Create account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
